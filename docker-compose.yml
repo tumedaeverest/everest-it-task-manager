@@ -1,0 +1,9 @@
+services:
+  everest-it:
+    build: .
+    container_name: everest-it-task-manager
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
